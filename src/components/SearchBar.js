@@ -11,11 +11,16 @@ class SearchBar extends React.Component {
   };
   render() {
     return (
-      <div style={{background:'red',borderRadius:'10px'}} className="search-bar ui segment">
+      <div
+        style={{ background: "red", borderRadius: "10px" }}
+        className="search-bar ui segment"
+      >
         <form onSubmit={this.onFormSubmit} className="ui form">
           <div className="field">
-            <label style={{color:'white',fontSize:'24px'}}>Youtube</label>
+            <label style={{ color: "white", fontSize: "24px" }}>Youtube</label>
             <input
+            style={{ borderRadius: "10px" }}
+   
               type="text"
               value={this.state.term}
               onChange={this.onInputChange}
